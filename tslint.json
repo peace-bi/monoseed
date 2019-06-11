@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "tslint-plugin-prettier",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": ["**/*.d.ts", "**/*.{test,story}.ts{,x}"]
+  },
+  "rules": {
+    "prettier": true,
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape",
+      "avoid-template",
+      "jsx-double"
+    ],
+    "interface-name": false,
+    "no-implicit-dependencies": [false, "dev"],
+    "member-access": false,
+    "object-literal-sort-keys": false,
+    "no-empty-interface": false,
+    "no-submodule-imports": false
+  }
+}
